@@ -13,7 +13,7 @@ from jose import jwt, JWTError
 router = APIRouter()
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
-OAuth2_bearer = OAuth2PasswordBearer(tokenUrl='/login')
+OAuth2_bearer = OAuth2PasswordBearer(tokenUrl='/auth/login')
 
 SECRET_KEY = '86746eeb8285ca279c6251e0bd83cdd50c88027b934a93f19d8b9af782139516'
 ALGORITHM = 'HS256'
